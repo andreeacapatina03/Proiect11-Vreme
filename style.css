@@ -1,0 +1,9 @@
+body { font-family: sans-serif; display: flex; justify-content: center; transition: background 0.5s; height: 100vh; margin: 0; align-items: center; }
+.app-container { background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.hidden { display: none; }
+.history-item { cursor: pointer; margin: 5px; color: blue; text-decoration: underline; display: inline-block; }
+/* Temele pentru cerința 8 */
+.theme-clear { background: #ffcc00; }
+.theme-rain { background: #4a90e2; }
+.theme-clouds { background: #bdc3c7; }
+.theme-night { background: #2c3e50; color: white; }
