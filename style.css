@@ -1,9 +1,48 @@
-body { font-family: sans-serif; display: flex; justify-content: center; transition: background 0.5s; height: 100vh; margin: 0; align-items: center; }
-.app-container { background: rgba(255, 255, 255, 0.8); padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.8s ease;
+    background: #f0f2f5;
+}
+
+/* Teme de fundal (Cerința 8) */
+.theme-clear { background: linear-gradient(to bottom, #f7b733, #fc4a1a); } /* Portocaliu/Galben */
+.theme-rain { background: linear-gradient(to bottom, #4b6cb7, #182848); color: white; } /* Albastru inchis */
+.theme-clouds { background: linear-gradient(to bottom, #bdc3c7, #2c3e50); color: white; } /* Gri */
+.theme-night { background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); color: white; } /* Noapte */
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+    color: #333;
+}
+
 .hidden { display: none; }
-.history-item { cursor: pointer; margin: 5px; color: blue; text-decoration: underline; display: inline-block; }
-/* Temele pentru cerința 8 */
-.theme-clear { background: #ffcc00; }
-.theme-rain { background: #4a90e2; }
-.theme-clouds { background: #bdc3c7; }
-.theme-night { background: #2c3e50; color: white; }
+
+.search-box { margin-bottom: 20px; display: flex; gap: 5px; flex-wrap: wrap; justify-content: center; }
+input, select, button { padding: 8px; border-radius: 5px; border: 1px solid #ddd; }
+
+#search-btn { background: #007bff; color: white; cursor: pointer; }
+#geo-btn { background: #28a745; color: white; cursor: pointer; }
+
+.history-item {
+    background: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 2px;
+    display: inline-block;
+    color: #333;
+}
+
+#temp-display { font-size: 3rem; font-weight: bold; margin: 10px 0; }
+#recommendation { font-weight: bold; margin-top: 15px; color: #d63031; }

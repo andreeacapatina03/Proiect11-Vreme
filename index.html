@@ -2,36 +2,38 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <title>Weather App - Proiect Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect Vreme - Tehnologii Web</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-container">
+    <div class="card">
         <h1>🌤️ Weather App</h1>
         
-        <div class="search-section">
-            <input type="text" id="city-input" placeholder="Introdu orașul...">
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Introdu orașul (ex: Iasi)">
             <select id="unit-select">
                 <option value="metric">Celsius (°C)</option>
                 <option value="imperial">Fahrenheit (°F)</option>
                 <option value="standard">Kelvin (K)</option>
             </select>
             <button id="search-btn">Caută</button>
-            <button id="geo-btn">📍 Locația mea</button>
+            <button id="geo-btn" title="Locația mea">📍</button>
         </div>
 
-        <div id="history-section">
-            <span>Căutări recente:</span>
+        <div id="history-container">
+            <p>Căutări recente:</p>
             <div id="history-list"></div>
         </div>
 
-        <div id="weather-display" class="hidden">
-            <h2 id="city-display">---</h2>
-            <div id="temp-display">--</div>
+        <div id="weather-result" class="hidden">
+            <h2 id="city-name">---</h2>
+            <div id="temp-display">--°</div>
             <p id="desc-display">--</p>
+            <hr>
             <div class="details">
-                <span id="wind-display">Vânt: --</span> | 
-                <span id="hum-display">Umiditate: --</span>
+                <p id="wind-display">Vânt: --</p>
+                <p id="hum-display">Umiditate: --</p>
             </div>
             <p id="recommendation"></p>
         </div>
